@@ -32,8 +32,7 @@ class Pedido {
 
     Calendar aux = GregorianCalendar.getInstance();
 
-    // -1 pois o ano começa em 0 pra função
-    aux.set(year, (month - 1), day);
+    aux.set(year, month, day);
 
     this.numero = num;
     this.cliente = cli;
